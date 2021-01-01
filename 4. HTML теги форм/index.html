@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML теги форм</title>
+</head>
+
+<body>
+	<!--* Начало формы, используется метод POST (т.е. данные скрыты) -->
+	<form action="#" method="POST" enctype="multipart/form-data">
+		<div>
+			<h4>Имя</h4>
+			<!-- Текстовое поле с поясненем и tabindex=1 -->
+			<p><input tabindex="1" placeholder="Ваше имя" name="username" type="text" /></p>
+		</div>
+		<div>
+			<h4>Пароль</h4>
+			<!-- Поле ввода пароля с поясненем и tabindex=2 -->
+			<p><input tabindex="2" placeholder="Введите пароль" name="userpass" type="password" /></p>
+		</div>
+		<div>
+			<h4>Телефон</h4>
+			<!-- Поле ввода телефона с поясненем и tabindex=3 -->
+			<p><input tabindex="3" placeholder="Введите телефон" name="userphone" type="tel" /></p>
+		</div><br>
+		<div>
+			<h4>Пол</h4>
+			<div>
+				<!-- Переключатель, tabindex=4, по умолчанию "Мужской" -->
+				<input checked tabindex="4" name="render" type="radio" value="male" /> Мужской </p>
+			</div>
+			<div>
+				<input tabindex="4" name="render" type="radio" value="female" /> Женский </p>
+			</div>
+		</div><br>
+		<div>
+			<h4>Имущество</h4>
+			<div>
+				<!-- Переключатель, tabindex=5-7, по умолчанию "Велик" -->
+				<input checked tabindex="5" name="velik" type="checkbox" value="yes" /> Велик </p>
+			</div>
+			<div>
+				<input tabindex="6" name="car" type="checkbox" value="yes" /> Машина </p>
+			</div>
+			<div>
+				<!-- Переключатель отключен -->
+				<input disabled tabindex="7" name="house" type="checkbox" value="yes" /> Дом </p>
+			</div>
+		</div><br>
+		<div>
+			<h4>Сообщение</h4>
+			<!-- Текстовое поле с поясненем и tabindex=8 -->
+			<p><textarea tabindex="8" placeholder="Ваше сообщение" name="message"></textarea></p>
+		</div><br>
+		<div>
+			<h4>Прикрепить фото</h4>
+			<!-- Выбор файла tabindex=9 -->
+			<p><input tabindex="9" name="userfoto" type="file" /></p>
+		</div><br>
+		<div>
+			<h4>Любимый цвет</h4>
+			<!-- Выпадающий список tabindex=10 -->
+			<div><select tabindex="10" name="color">
+					<option value="red">Красный</option>
+					<option value="black">Чёрный</option>
+					<!-- Значение по умолчанию -->
+					<option selected value="yellow">Желтый</option>
+				</select>
+			</div>
+		</div><br>
+		<div>
+			<h4>Действия</h4>
+			<!-- Кнопики tabindex=11-12 -->
+			<button abindex="11" type="reset">Очистить</button>
+			<button abindex="12" type="submit">Отправить</button>
+		</div>
+	</form>
+	<!--* Конец формы -->
+</body>
+
+</html>
