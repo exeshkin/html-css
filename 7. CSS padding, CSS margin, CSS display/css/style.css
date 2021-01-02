@@ -1,0 +1,47 @@
+@import "null.css";
+
+.fix-width-margin50 {
+	line-height: 25px;
+	margin: 50px 50px 30px 50px;
+	max-width: 615px;
+}
+
+.marginleft50 {
+	margin-left: 50px;
+}
+
+.margin-left50-bottom30-block {
+	display: block;
+	margin-left: 50px;
+	margin-bottom: 30px;
+}
+
+.margin50 {
+	line-height: 25px;
+	padding: 0px 0px 50px 0px;
+	margin: 0px 50px 0px 50px;
+}
+
+.inline-block {
+	display: inline-block;
+	margin: 30px 0px 30px 50px;
+}
+
+.div-block {
+	margin: 0px 50px 30px 50px;
+}
+
+.padinglr50 {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.padingr50 {
+	padding-right: 50px;
+}
+
+.string-to-block {
+	display: block;
+	margin: 0px 50px 0px 50px;
+	padding: 50px 0px 50px 0px;
+}
