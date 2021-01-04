@@ -1,0 +1,79 @@
+@import "null.css";
+
+body {
+	font-size: 15px;
+}
+
+.bold {
+	font-weight: 700;
+	color: darkred;
+	text-shadow: 1px 1px #a19f16;
+}
+
+.border {
+	border: 2px dashed #771122;
+	color: midnightblue;
+	padding: 15px 15px 15px 15px;
+	margin: 15px 15px 15px 15px;
+}
+
+.border-radius {
+	border: 2px dashed #771122;
+	border-radius: 20px;
+	color: midnightblue;
+	padding: 15px 15px 15px 15px;
+	margin: 15px 15px 15px 15px;
+}
+
+.outline {
+	outline: 2px solid #618;
+	color: darkgreen;
+}
+
+.box-shadow {
+	border: 2px solid #771122;
+	border-radius: 20px;
+	color: midnightblue;
+	padding: 15px 15px 15px 15px;
+	margin: 15px 15px 15px 15px;
+	box-shadow: 1px 1px 3px 1px#117077;
+}
+
+.box-shadow-inset {
+	border: 2px solid #771122;
+	border-radius: 100px;
+	color: midnightblue;
+	padding: 15px 15px 15px 15px;
+	margin: 15px 15px 15px 15px;
+	box-shadow: 1px 1px 3px 1px#117077, inset 1px 1px 3px 1px#317711;
+}
+
+.opacity {
+	border: 2px solid #771122;
+	border-radius: 20px;
+	color: midnightblue;
+	padding: 15px 15px 15px 15px;
+	margin: 15px 15px 15px 15px;
+	box-shadow: 1px 1px 3px 1px#117077, inset 1px 1px 3px 1px#317711;
+	opacity: 0.4;
+}
+
+.opacity-string {
+	outline: 2px solid #618;
+	color: darkgreen;
+	opacity: 0.5;
+}
+
+.visibility {
+	border: 2px solid #771122;
+	border-radius: 20px;
+	color: midnightblue;
+	padding: 15px 15px 15px 15px;
+	margin: 15px 15px 15px 15px;
+	box-shadow: 1px 1px 3px 1px#117077, inset 1px 1px 3px 1px#317711;
+	visibility: hidden;
+}
+
+.image-none-padding {
+	padding: 0 0 0 0;
+}
