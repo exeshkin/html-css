@@ -7,7 +7,7 @@ body {
 	padding: 10% 20% 10% 20%;
 }
 
-.previev {
+.category {
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
 	text-transform: uppercase;
@@ -15,17 +15,17 @@ body {
 	line-height: 40px;
 }
 
-.page-name {
+h1 {
 	font-size: 36px;
 	text-align: center;
-	padding: 0 60px 0 60px;
+	padding: 0px 60px 30px 60px;
 }
 
 .image {
 	box-shadow: 0px 0px 20px rgba(39, 61, 70, 0.2);
 	background: #ffffff;
 	text-align: center;
-	margin: 77px 0 97px 0;
+	margin: 47px 0 97px 0;
 	padding: 10px;
 }
 
@@ -78,5 +78,5 @@ body {
 }
 
 .footer {
-	height: 100px;
+	min-height: 100px;
 }
