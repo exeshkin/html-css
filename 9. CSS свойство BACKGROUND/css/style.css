@@ -1,0 +1,82 @@
+@import "null.css";
+
+body {
+	background: rgba(232, 232, 232, 1) url("../img/body-fon-all.png") 0 0 / 100% auto no-repeat;
+	font-family: "Times New Roman", Times, serif;
+	color: #273d46;
+	padding: 10% 20% 10% 20%;
+}
+
+.previev {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 40px;
+}
+
+.page-name {
+	font-size: 36px;
+	text-align: center;
+	padding: 0 60px 0 60px;
+}
+
+.image {
+	box-shadow: 0px 0px 20px rgba(39, 61, 70, 0.2);
+	background: #ffffff;
+	text-align: center;
+	margin: 77px 0 97px 0;
+	padding: 10px;
+}
+
+.paragraph {
+	padding: 0 44px 60px 44px;
+	font-size: 24px;
+	line-height: 40px;
+}
+
+.ul li {
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0 0 0 35px;
+	margin: 0 0 0 44px;
+	font-size: 20px;
+	line-height: 36px;
+	background: url("../img/item.png") 0 7px no-repeat;
+}
+
+.li-shadow {
+	text-shadow: 1px 1px 1px #273d46;
+}
+
+.li-color-italic {
+	color: #80b7b3;
+	font-style: italic;
+}
+
+.li-bold {
+	font-weight: 700;
+}
+
+.li-color-line-through {
+	color: #bbbebf;
+	text-decoration: line-through;
+}
+
+.button {
+	border-radius: 30px;
+	box-shadow: 0px 0px 20px rgba(128, 183, 179, 0.54);
+	background: rgba(128, 183, 179, 1);
+	margin: 60px 0 35px 44px;
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 40px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.footer {
+	height: 100px;
+}
