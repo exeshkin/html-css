@@ -1,0 +1,239 @@
+// *Google fonts
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Redressed&family=Roboto+Slab:wght@100&display=swap");
+@import "null.scss";
+
+/* ------- basic style ------- */
+@font-face {
+	font-family: "Pacifico";
+	src: url("../fonts/Pacifico-Regular.eot");
+	src: local("☺"), url("../fonts/Pacifico-Regular.woff") format("woff"),
+		url("../fonts/Pacifico-Regular.ttf") format("truetype"), url("../fonts/Pacifico-Regular.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+$bz: 600px; //размер блока
+@mixin block {
+	max-width: $bz;
+	border: 1px solid #ffffff;
+	background: lightslategrey;
+	border-radius: 10px;
+	width: auto 100%;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+body {
+	background: dimgrey;
+	padding: 20px;
+}
+
+h1 {
+	font-size: 25px;
+	color: darkred;
+	text-shadow: 0px 0px 10px #ffffff;
+	text-align: center;
+}
+
+.block-1 {
+	@include block;
+
+	p {
+		margin: 10px 20px;
+		padding: 5px;
+		border: 1px dashed #0f0875;
+		border-radius: 10px;
+		box-shadow: 0px 0px 5px #ffffff;
+	}
+
+	p:first-child {
+		background: mediumpurple;
+	}
+
+	p:nth-child(2) {
+		background: orange;
+		position: relative;
+		top: 15px;
+		left: 15px;
+	}
+
+	p:last-child {
+		background: springgreen;
+	}
+}
+
+.block-2 {
+	@include block;
+	position: relative;
+
+	p {
+		margin: 10px 20px;
+		padding: 5px;
+		border: 1px dashed #0f0875;
+		border-radius: 10px;
+		box-shadow: 0px 0px 5px #ffffff;
+	}
+
+	p:first-child {
+		background: mediumpurple;
+	}
+
+	p:nth-child(2) {
+		background: orange;
+		position: absolute;
+		top: 15px;
+		left: 15px;
+	}
+
+	p:last-child {
+		font-family: "Roboto Slab";
+		text-align: center;
+		width: 100;
+		color: #000;
+		background: white;
+	}
+}
+
+.block-3 {
+	@include block;
+	//position: relative;
+
+	p {
+		margin: 10px 20px;
+		padding: 5px;
+		border: 1px dashed #0f0875;
+		border-radius: 10px;
+		box-shadow: 0px 0px 5px #ffffff;
+	}
+
+	p:first-child {
+		background: mediumpurple;
+	}
+
+	p:first-child:hover {
+		background: deeppink;
+		color: yellow;
+		text-shadow: 2px 2px 5px #000;
+		box-shadow: 0px 0px 15px yellow;
+	}
+
+	p:first-child:hover::before {
+		content: "before ----> ";
+	}
+
+	p:first-child:hover::after {
+		content: " <---- after";
+	}
+
+	p:nth-child(2) {
+		font-family: Pacifico;
+		font-size: 20px;
+		text-align: center;
+		color: purple;
+		background: orange;
+		position: absolute;
+		top: 20%;
+		left: 10%;
+	}
+
+	p:last-child {
+		background: springgreen;
+	}
+}
+
+.block-4 {
+	@include block;
+
+	p {
+		margin: 10px 20px;
+		padding: 5px;
+		border: 1px dashed #0f0875;
+		border-radius: 10px;
+		box-shadow: 0px 0px 5px #ffffff;
+	}
+
+	p:first-child {
+		background: mediumpurple;
+	}
+
+	p:nth-child(2) {
+		font-family: "East Sea Dokdo";
+		text-align: center;
+		font-size: 30px;
+		background: orange;
+		position: fixed;
+		top: 5%;
+		left: 5%;
+	}
+
+	p:last-child {
+		background: springgreen;
+	}
+}
+
+.block-5 {
+	@include block;
+
+	p {
+		padding: 5px;
+		margin: 10px 20px;
+		border: 1px dashed #0f0875;
+		border-radius: 10px;
+		box-shadow: 0px 0px 5px #ffffff;
+	}
+
+	p:first-child {
+		background: mediumpurple;
+	}
+
+	p:nth-child(2) {
+		background: orange;
+		position: sticky;
+		top: 0;
+	}
+	p:nth-child(3) {
+		background: chartreuse;
+		position: sticky;
+		top: 0;
+	}
+	p:nth-child(4) {
+		background: coral;
+		position: sticky;
+		top: 0;
+	}
+	p:nth-child(5) {
+		background: rgb(224, 230, 146);
+		position: sticky;
+		top: 0;
+	}
+
+	p:last-child {
+		background: springgreen;
+	}
+}
+
+.end-block {
+	@include block;
+	height: 800px;
+	h1 {
+		border: 3px dotted whitesmoke;
+		border-radius: 20px;
+		width: 65%;
+		margin: 0 auto;
+		position: sticky;
+		top: 0;
+	}
+	h1:hover {
+		border: 3px dotted yellow;
+		color: red;
+		text-shadow: 0px 0px 10px green;
+		box-shadow: 0px 0px 15px red, inset 0px 0px 15px yellow;
+	}
+
+	h1:hover::before {
+		content: url(../img/15!.png) "Кривой ";
+	}
+	h1:hover::after {
+		content: "Учим дальше ;)";
+	}
+}
