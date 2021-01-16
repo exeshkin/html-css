@@ -1,0 +1,4 @@
+ctrl+1 - Обвернуть
+ctrl+2 - eCSSTractor
+ctrl+3 - Вставить блок BEM
+ctrl+4 - Google Translate

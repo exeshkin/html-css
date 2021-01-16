@@ -1,0 +1,136 @@
+@import "../../!nullstyle/null.scss";
+
+@font-face {
+	font-family: "Gilroy";
+	font-display: swap;
+	src: url("../fonts/Gilroylight.woff");
+	src: local("☺"), url("../fonts/Gilroylight.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Gilroy";
+	font-display: swap;
+	src: url("../fonts/Gilroyextrabold.woff");
+	src: local("☺"), url("../fonts/Gilroyextrabold.woff2") format("woff2");
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: "OpenSans";
+	font-display: swap;
+	src: url("../fonts/opensans.woff");
+	src: local("☺"), url("../fonts/opensans.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "OpenSans";
+	font-display: swap;
+	src: url("../fonts/opensanslight.woff");
+	src: local("☺"), url("../fonts/opensanslight.woff2") format("woff2");
+	font-weight: 300;
+	font-style: normal;
+}
+
+body {
+	width: 1440px;
+	height: 2795px;
+	border: 1px solid #d4d2d2; //*ЗАКОММЕНТИРОВАТЬ
+	margin: 0 auto;
+}
+
+.main {
+	width: 1160px;
+	height: 299px;
+	background-color: rgba(240, 197, 46, 0.5);
+	margin: 40px 140px 0 140px;
+	position: relative;
+	&__logo {
+		position: absolute;
+		top: -19px;
+		left: 60px;
+	}
+}
+.top-menu {
+	margin: 43px 61px 0 63px;
+	color: #000000;
+	font-family: "Open Sans";
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+	text-align: left;
+	letter-spacing: 0.15px;
+	display: inline-flex;
+	&__search-icon {
+		margin: 7px 20px 0 0;
+	}
+	&__search {
+		width: 108px;
+		height: 15px;
+		background-color: rgba(240, 197, 46, 0);
+		color: #000000;
+		font-family: "Open Sans";
+		font-size: 15px;
+		font-weight: 300;
+		line-height: 30px;
+		text-align: left;
+		letter-spacing: 0.15px;
+	}
+	&__user-login-icon {
+		margin: 9px 14px 0 392px;
+	}
+	&__compare-icon {
+		margin: 11px 10px 0 217px;
+	}
+	&__cart-icon {
+		margin: 10px 12px 0 40px;
+	}
+}
+.menu {
+	color: #000000;
+	font-family: "Gilroy";
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 24px;
+	text-align: left;
+	text-transform: uppercase;
+	letter-spacing: 3.6px;
+	margin: 29px 0 0 0;
+	display: inline-flex;
+	&__catalog {
+		margin: 0 0 0 60px;
+	}
+	&__plus-icon {
+		margin: 3px 0 0 11px;
+	}
+	&__delivery {
+		margin: 0px 0 0 294px;
+	}
+	&__warranty {
+		margin: 0px 0 0 34px;
+	}
+	&__contacts {
+		margin: 0px 0 0 108px;
+	}
+}
+.header-bottom {
+	&__block {
+		height: 7px;
+		width: 100px;
+		background: white;
+		position: absolute;
+		right: 460px;
+		top: 225px;
+	}
+	&__header-01 {
+		color: #ffffff;
+		font-family: "Gilroy";
+		font-size: 179px;
+		font-weight: 800;
+		text-align: right;
+		position: absolute;
+		right: 50px;
+		top: 173px;
+	}
+}

@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import "../../!nullstyle/null.scss";
+
+@mixin row {
+	border: 10px solid rgb(43, 83, 214);
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+body {
+	font-family: "Indie Flower", cursive;
+	background: rgb(184, 223, 189);
+	color: rgb(219, 219, 98);
+	font-size: 40px;
+
+	//* выравнивает блок по центру (display: inline-flex)
+	text-align: center;
+}
+
+h1 {
+	color: rgb(98, 120, 219);
+	font-size: 50px;
+	margin: 50px 0 15px 0;
+	span {
+		color: red;
+	}
+}
+
+.column {
+	background: rgb(238, 108, 76);
+	padding: 20px;
+}
+
+.item {
+	background: rgb(15, 100, 89);
+	padding: 20px;
+}
+
+// * display: flex
+.row1 {
+	@include row;
+	font-size: 200px;
+
+	display: flex;
+}
+
+// * display: inline-flex
+.row2 {
+	@include row;
+	display: inline-flex;
+}
+
+// * display: flex -> justify-content: flex-end
+.row3 {
+	@include row;
+	display: flex;
+	justify-content: flex-end;
+}
+
+// * display: flex -> justify-content: center
+.row4 {
+	@include row;
+	display: flex;
+	justify-content: center;
+}
+
+// * display: flex -> justify-content: space-between
+.row5 {
+	@include row;
+	display: flex;
+	justify-content: space-between;
+}
+
+// * display: flex -> justify-content: space-around
+.row6 {
+	@include row;
+	display: flex;
+	justify-content: space-around;
+}
+
+// * display: flex -> align-items: stretch
+.row7 {
+	@include row;
+	display: flex;
+	align-items: stretch;
+	&__item2 {
+		height: 150px;
+	}
+}
+
+// * display: flex -> align-items: flex-start
+.row8 {
+	@include row;
+	display: flex;
+	align-items: flex-start;
+	&__item2 {
+		height: 150px;
+	}
+}
+
+// * display: flex -> align-items: flex-end
+.row9 {
+	@include row;
+	display: flex;
+	align-items: flex-end;
+	&__item2 {
+		height: 150px;
+	}
+}
+
+// * display: flex -> align-items: center
+.row10 {
+	@include row;
+	display: flex;
+	align-items: center;
+	&__item2 {
+		height: 150px;
+	}
+}
+
+// * display: flex -> flex-wrap: wrap
+.row11 {
+	@include row;
+	font-size: 200px;
+	display: flex;
+	flex-wrap: wrap;
+	&__item2 {
+		height: 350px;
+	}
+}
+
+// * display: flex -> flex-wrap: wrap-reverse
+.row12 {
+	@include row;
+	font-size: 200px;
+	display: flex;
+	flex-wrap: wrap-reverse;
+	&__item2 {
+		height: 350px;
+	}
+}
