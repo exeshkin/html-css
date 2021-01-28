@@ -1,0 +1,25 @@
+@import "_fonts";
+@import "_null";
+@import "_header";
+@import "_footer";
+.wrapper {
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.container {
+	//border: 1px solid #000;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 25px;
+}
+.content {
+	flex: 1 1 auto;
+	//
+	padding: 50px 0;
+	font-size: 50px;
+	//
+}
