@@ -1,25 +1,41 @@
 @import "_fonts";
 @import "_null";
-@import "_header";
-@import "_footer";
+
 .wrapper {
-	font-family: Roboto, sans-serif;
-	font-size: 16px;
+	background: url(../img/fon/ice-cream-1.png) 50% 100px no-repeat, url(../img/fon/lighting1.png) 50% 0 no-repeat,
+		#849d8f;
+	//background: url(../img/fon/ice-cream-2.png) 50% 100px no-repeat, url(../img/fon/lighting2.png) 50% 0 no-repeat, #8996a6;
+	//background: url(../img/fon/ice-cream-3.png) 50% 100px no-repeat, url(../img/fon/lighting3.png) 50% 0 no-repeat, #9d8b84;
+	font-family: "Roboto", sans-serif;
+	min-width: 900px;
 	min-height: 100%;
 	overflow: hidden;
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
 }
+
 .container {
-	//border: 1px solid #000;
+	padding: 23px 27px 0px 27px;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 25px;
 }
+
+@import "_header";
+
 .content {
-	flex: 1 1 auto;
-	//
-	padding: 50px 0;
-	font-size: 50px;
-	//
+	position: relative;
+	&__hidden-h {
+		visibility: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
 }
+@import "_contentSlider";
+@import "_contentBanner";
+@import "_contentHits";
+@import "_contentSeo";
+@import "_contentNewsAndMailing";
+@import "_address";
+
+@import "_footer";
