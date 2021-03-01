@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-stream.css">
+	<link rel="stylesheet" href="css/clock.css">
+	<title>Часы</title>
+</head>
+
+<body class="body">
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<section class="header__areas">
+					<div class="header__logo"><a href="">Общение Христиан</a></div>
+					<nav class="header__nav">
+						<ul class="header__list">
+							<li class="header__items"><a href="index.html">Главная</a></li>
+							<li class="header__items header__items-nav-drop-list"><a href="">Служение<img
+										src="img/down-arrow.webp" alt=""></a></li>
+							<li class="header__items header__items-nav-drop-list"><a href="">Послание<img
+										src="img/down-arrow.webp" alt=""></a></li>
+							<li class="header__items header__items-nav-drop-list"><a href="">Поклонение<img
+										src="img/down-arrow.webp" alt=""></a></li>
+							<li class="header__items"><a href="">Видео</a></li>
+							<li class="header__items"><a href="">Галерея</a></li>
+							<li class="header__items"><a href="stream.html">Трансляция</a></li>
+							<li class="header__items"><a href=""><img src="img/search.webp" alt="">Поиск</a></li>
+						</ul>
+					</nav>
+				</section>
+			</div>
+		</header>
+
+		<main class="main">
+			<h2 class="title-h2">Прямая трансляция</h2>
+			<section class="main__stream">
+				<div class="container">
+					<h1 class="hide-h">Прямая трансляция</h1>
+					<div class="main__event-feed-row">
+						<div class="main__stream-text">
+							<span>Начало трансляции служений:</span>
+							<ul class="main__stream-text-list">
+								<li class="main__stream-text-item">среда - в 19:00</li>
+								<li class="main__stream-text-item">воскресенье - в 12:00</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<section class="block-clock">
+					<div class="clock">
+						<div class="today">У нас сейчас:<br><span id="dayWeek"> </span></div>
+						<div class="container">
+							<h2 id="hour">00</h2>
+							<h2 class="dot">:</h2>
+							<h2 id="minute">00</h2>
+							<h2 class="dot">:</h2>
+							<h2 id="seconds">00</h2>
+						</div>
+					</div>
+				</section>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__row">
+					<div class="footer__contact"><a href="">Контакты</a></div>
+					<div class="footer__youtube"><a href="https://www.youtube.com/channel/UCu8CWWl2o4UxsJGCOkWAa2w"
+							target="_blank"><img src="img/youtube.webp" alt="YouTube канал"></a></div>
+					<div class="footer__copyright">2010-2021 | © "Общение христиан"</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/scrypt.js"></script>
+	</div>
+
+</body>
+
+</html>

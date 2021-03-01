@@ -1,0 +1,77 @@
+.block-clock {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+.clock {
+	position: relative;
+	width: 60%;
+	padding: 10px 0;
+	background: rgba(0, 0, 0, 0.3);
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+	z-index: 1000;
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	backdrop-filter: blur(20px);
+	animation: animate 5s ease-in-out infinite;
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+}
+
+@keyframes animate {
+	0%,
+	100% {
+		transform: translateX(10px);
+	}
+	50% {
+		transform: translateX(-10px);
+	}
+}
+
+.clock .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	//height: 100%;
+}
+
+.clock .today {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1em;
+}
+
+#dayWeek {
+	padding: 5px 15px;
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+	margin: 15px 10px 0px 10px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	font-size: 1.2em;
+}
+
+.clock .container h2 {
+	font-size: 1.2em;
+}
+
+.clock .container h2:nth-child(odd) {
+	padding: 5px 15px;
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+	margin: 0 10px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.clock .container #seconds {
+	color: #f9d524;
+}
