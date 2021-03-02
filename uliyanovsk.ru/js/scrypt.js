@@ -35,4 +35,4 @@ function dayWeek() {
 }
 
 var interval = setInterval(dayWeek, 0);
-var interval = setInterval(clock, 1000);
+var interval = setInterval(clock, 0);

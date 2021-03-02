@@ -25,8 +25,8 @@
   border: 1px solid rgba(255, 255, 255, 0.15);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
-  -webkit-animation: animate 5s ease-in-out infinite;
-          animation: animate 5s ease-in-out infinite;
+  -webkit-animation: animate 10s ease-in-out infinite;
+          animation: animate 10s ease-in-out infinite;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (1fr)[2];
@@ -36,24 +36,24 @@
 @-webkit-keyframes animate {
   0%,
   100% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
   }
   50% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
   }
 }
 
 @keyframes animate {
   0%,
   100% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
   }
   50% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
   }
 }
 
@@ -111,6 +111,7 @@
   margin: 0 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
+  width: 60px;
 }
 
 .clock .container #seconds {

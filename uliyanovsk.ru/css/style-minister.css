@@ -1,0 +1,33 @@
+.main__minister-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+  justify-items: center;
+}
+
+.main__minister-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[4];
+  -ms-grid-columns: (1fr)[3];
+      grid-template: repeat(4, 1fr)/repeat(3, 1fr);
+  gap: 15px;
+}
+
+.main__minister-article-img {
+  width: 100%;
+}
+
+.main__button-more {
+  background-color: #00000050;
+  width: 20%;
+  margin-top: 20px;
+  color: #ffffff90;
+  padding: 20px;
+  font-size: 1.3em;
+  font-weight: 500;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 10px;
+}
