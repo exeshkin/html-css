@@ -17,18 +17,43 @@
 	border-radius: 10px;
 	border: 1px solid rgba(255, 255, 255, 0.15);
 	backdrop-filter: blur(20px);
-	animation: animate 10s ease-in-out infinite;
-	display: grid;
+		display: grid;
 	grid-template-rows: repeat(2, 1fr);
+	animation: time 10s ease-in-out infinite, timebg 30s ease-in-out infinite;
 }
 
-@keyframes animate {
+@keyframes time {
 	0%,
 	100% {
 		transform: translateX(10%);
 	}
 	50% {
 		transform: translateX(-10%);
+	}
+}
+
+@keyframes timebg {
+	0%,
+	100% {
+		background: rgba(255, 126, 126, 0.363);
+	}
+	14% {
+		background: rgba(255, 210, 126, 0.3);
+	}
+	29% {
+		background: rgba(255, 242, 126, 0.3);
+	}
+	43% {
+		background: rgba(148, 255, 126, 0.3);
+	}
+	58% {
+		background: rgba(129, 247, 255, 0.3);
+	}
+	72% {
+		background: rgba(117, 126, 255, 0.3);
+	}
+	87% {
+		background: rgba(244, 126, 255, 0.3);
 	}
 }
 

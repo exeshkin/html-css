@@ -18,7 +18,7 @@ $padding_tb: 20px;
 	font-size: 1em;
 	font-weight: 300;
 	color: #808080;
-
+	
 	a {
 		color: #ffffff;
 		border-bottom: 1px solid #ffffff30;
@@ -26,10 +26,17 @@ $padding_tb: 20px;
 }
 
 .wrapper {
-	height: 100%;
+	//height: 100%;
+	//width: 100%;
+	//display: grid;
+	//grid-template-rows: auto 1fr auto;
+
+	position: relative;
 	width: 100%;
-	display: grid;
-	grid-template-rows: auto 1fr auto;
+	height: 100vh;
+	scroll-behavior: smooth;
+	overflow: auto;
+	scroll-snap-type: y mandatory;
 }
 
 .container {
@@ -54,6 +61,9 @@ $padding_tb: 20px;
 	background-color: #00000050;
 	padding: $padding_tb $padding_lr;
 	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
 
 	&__areas {
 		display: grid;
@@ -96,11 +106,18 @@ $padding_tb: 20px;
 }
 
 .main {
-	padding-bottom: $padding_tb;
+	//padding-bottom: $padding_tb;
 	position: relative;
 
-	//&__event-feed {
-	//}
+	&__event-feed {
+		width: 100%;
+	height: 100vh;
+	scroll-snap-align: start;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	}
 
 	&__event-feed-row {
 		display: grid;
@@ -127,8 +144,15 @@ $padding_tb: 20px;
 
 	&__message {
 		background-color: #00000050;
-		width: 100%;
+		//width: 100%;
 		padding: $padding_tb 0;
+
+		width: 100%;
+	height: 100vh;
+	scroll-snap-align: start;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	}
 
 	&__message-feed-row {
@@ -157,6 +181,13 @@ $padding_tb: 20px;
 	&__worship {
 		padding: $padding_tb 0;
 		text-align: center;
+
+		width: 100%;
+	height: 100vh;
+	scroll-snap-align: start;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	}
 }
 
@@ -167,6 +198,9 @@ $padding_tb: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 
 	&__row {
 		display: grid;

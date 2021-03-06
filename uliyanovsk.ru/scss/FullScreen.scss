@@ -1,0 +1,69 @@
+@import "_null";
+
+.container {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	scroll-behavior: smooth;
+	overflow: auto;
+	scroll-snap-type: y mandatory;
+}
+.section {
+	width: 100%;
+	height: 100vh;
+	scroll-snap-align: start;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.section:nth-child(1) {
+	background: url(../img/test/bg1.jpg) 0 0 / cover;
+	background-attachment: fixed;
+}
+.section:nth-child(2) {
+	background: url(../img/test/bg2.jpg) 0 0 / cover;
+	background-attachment: fixed;
+}
+.section:nth-child(3) {
+	background: url(../img/test/bg3.jpg) 0 0 / cover;
+	background-attachment: fixed;
+}
+
+.section:nth-child(2) .box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	text-align: center;
+	font-size: 7em;
+	text-transform: uppercase;
+	font-family: Montserrat;
+	font-weight: 300;
+	width: 50%;
+	height: 50%;
+	background: #8dabff70;
+	border-radius: 20px;
+	backdrop-filter: blur(7px);
+	box-shadow: inset 0 0 10px #4dd4ce;
+	border: 1px solid #ffffff70;
+}
+
+.box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	text-align: center;
+	font-size: 7em;
+	text-transform: uppercase;
+	font-family: Montserrat;
+	font-weight: 300;
+	width: 50%;
+	height: 50%;
+	background: #00000070;
+	border-radius: 20px;
+	backdrop-filter: blur(7px);
+	box-shadow: inset 0 0 10px #4dd4ce;
+	border: 1px solid #ffffff70;
+}
