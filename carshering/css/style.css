@@ -45,10 +45,6 @@ body {
   height: 100px;
 }
 
-/* .logo {
-	&__link {
-	}
-} */
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,6 +60,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #fefefe;
+  white-space: nowrap;
   padding-bottom: 5px;
   -webkit-transition: all 500ms;
   transition: all 500ms;
@@ -83,12 +80,6 @@ body {
 
 .top {
   padding-bottom: 100px;
-  /* &__slider-item {
-	} */
-  /* &__item-img {
-	} */
-  /* &__item-text {
-	} */
 }
 
 .top__heading {
@@ -256,8 +247,6 @@ body {
 
 .rent {
   padding: 100px 0;
-  /* &__item-text {
-	} */
 }
 
 .rent__inner {
@@ -322,6 +311,14 @@ body {
           justify-content: space-between;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.rent__item:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .rent__item-num {
@@ -330,7 +327,7 @@ body {
   font-size: 96px;
   line-height: 115px;
   color: #1b1818;
-  opacity: 0.05;
+  opacity: 0.06;
 }
 
 .rent__item-title {
@@ -342,4 +339,185 @@ body {
 
 .rent__item:nth-child(3) {
   margin: 0 10px;
+}
+
+.benefits {
+  padding: 100px 0;
+}
+
+.benefits__title {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 50px;
+}
+
+.benefits__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.benefits__list {
+  width: 300px;
+  list-style: none;
+}
+
+.benefits__list-item {
+  margin-bottom: 27px;
+  padding-right: 26px;
+  position: relative;
+  text-align: right;
+}
+
+.benefits__list-item::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #332208;
+  right: 0;
+  top: 2px;
+}
+
+.benefits__list-item:nth-child(1), .benefits__list-item:nth-child(7) {
+  margin-right: 10px;
+}
+
+.benefits__list-item:nth-child(2), .benefits__list-item:nth-child(6) {
+  margin-right: 60px;
+}
+
+.benefits__list-item:nth-child(3), .benefits__list-item:nth-child(5) {
+  margin-right: 110px;
+}
+
+.benefits__list-item:nth-child(4) {
+  margin-right: 157px;
+}
+
+.benefits__content {
+  width: 300px;
+  text-align: right;
+}
+
+.benefits__text {
+  margin-bottom: 30px;
+}
+
+.benefits__text + .benefits__text {
+  width: 267px;
+  margin-left: auto;
+}
+
+.video-popup {
+  display: inline-block;
+  background: #c5ac2d;
+  text-transform: uppercase;
+  color: #fefefe;
+  padding: 6px 34px 6px 64px;
+  text-align: center;
+  position: relative;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  border: 1px solid transparent;
+}
+
+.video-popup::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: url(../img/icon/play.svg) no-repeat;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 34px;
+}
+
+.video-popup:hover {
+  color: #c5ac2d;
+  background: #332208;
+  border: 1px solid #c5ac2d;
+}
+
+.reviews {
+  padding: 100px 0;
+  background: #332208;
+  color: #fefefe;
+}
+
+.reviews__title {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  padding-bottom: 70px;
+}
+
+.reviews__item {
+  border: 1px solid #c5ac2d;
+  width: 270px;
+  min-height: 300px;
+  padding: 45px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  margin-right: 30px;
+  cursor: pointer;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.reviews__item:hover {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+.reviews__item-name {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.reviews__slider .slick-dots button {
+  background-color: #c5ac2d;
+  margin: 0 5px;
+  line-height: 12px;
+}
+
+.reviews__slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 35px;
+}
+
+.slick-initialized .reviews__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
