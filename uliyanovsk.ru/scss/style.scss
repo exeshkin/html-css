@@ -1,2 +1,138 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;300;400;500;700&display=swap");
 @import "_null";
+
+.body {
+	font-family: "Exo 2", sans-serif;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 400;
+	background-color: lightblue;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.header {
+	padding: 25px;
+	background-color: #00000050;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		font-size: 40px;
+		margin-bottom: 25px;
+		color: #fefefe;
+		white-space: nowrap;
+	}
+
+	&__logo-link {
+		color: #fefefe;
+	}
+
+	&__menu-list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__menu-item {
+		padding: 0 15px 0;
+	}
+
+	&__menu-item-link {
+		color: #fefefe;
+		font-size: 18px;
+		line-height: 20px;
+		font-weight: 300;
+	}
+}
+
+.events {
+	padding: 50px 20px;
+
+	&__title {
+		padding: 10px;
+		background-color: #00000050;
+		border-radius: 10px;
+		text-align: center;
+		margin-bottom: 25px;
+		font-size: 35px;
+		line-height: 30px;
+		color: #fefefe;
+		letter-spacing: 1px;
+	}
+
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__article {
+		position: relative;
+		width: 380px;
+		height: 214px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		padding: 5px;
+		margin: 10px;
+	}
+
+	&__article-link {
+		color: #fefefe;
+	}
+
+	&__article-img {
+		width: 100%;
+		border-radius: 5px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+
+	&__article-bottom-block {
+		width: 90%;
+		padding: 5px;
+		background-color: #00000050;
+		border: 1px solid #fefefe40;
+		border-radius: 5px;
+		text-align: center;
+		font-weight: 300;
+		transition: all 500ms;
+	}
+
+	&__article-bottom-block:hover {
+		transform: scale(1.1);
+	}
+
+	&__article-minister {
+		color: #fefefe;
+		width: 80%;
+		padding: 5px;
+		background-color: #00000050;
+		border: 1px solid #fefefe40;
+		border-radius: 5px;
+		text-align: center;
+	}
+
+	&__article-title {
+		margin-bottom: 4px;
+	}
+
+	&__article-date {
+		display: inline-block;
+		width: 50%;
+		border-top: 1px solid #fefefe40;
+	}
+}
